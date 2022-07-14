@@ -31,9 +31,9 @@ body {
 	color: #414141;
 	overflow-x: hidden;
 	margin: 0;
-	background-color: #fff;
+	background-color: #fff; 
 }
-button {
+button { 
 	cursor: pointer;
 }
 button, input, optgroup, select, textarea {
