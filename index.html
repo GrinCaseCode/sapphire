@@ -20,8 +20,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.1" />
-	<link rel="stylesheet" href="css/media.css?ver=1.1" />
+	<link rel="stylesheet" href="css/main.css?ver=1.2" />
+	<link rel="stylesheet" href="css/media.css?ver=1.2" />
 </head> 
 <body>
 
@@ -36,7 +36,33 @@
 					<a href="tel:+79788088050" class="phone-main">+7 (978) 808-80-50</a>
 				</div>
 				<ul class="menu">
-					<li><a href="#">О компании</a></li>
+					<li class="menu__haschild">
+						<a href="#">О компании</a>
+						<div class="menu-dropdown">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-11">
+										<div class="row">
+											<div class="col-lg-7">
+												<ul>
+													<li><a href="#">О нас</a></li>
+													<li><a href="#">Наши объекты</a></li>
+													<li><a href="#">Отзывы</a></li>
+													<li><a href="#">Вопрос-ответ</a></li>
+													<li><a href="#">Документация</a></li>
+												</ul>
+											</div>
+											<div class="col-lg-5">
+												<div class="image-menu">
+													<img src="img/img_menu.jpg" alt="alt">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
 					<li><a href="#">ЖК «Руднево»</a></li>
 					<li><a href="#">Подбор квартиры</a></li>
 					<li><a href="#">Аренда помещений</a></li>
@@ -46,16 +72,43 @@
 					<li><a href="#">Контакты</a></li>
 				</ul>
 				<a href="#" class="logo">
-					<img src="img/logo2.svg" alt="alt">
+					<img src="img/logo.svg" alt="alt">
 				</a>
 				<span class='sandwich'>
 					<span class='sw-topper'></span>
+					<span class='sw-bottom'></span>
 					<span class='sw-footer'></span>
 				</span>
 			</div>
 			<div class="menu-mobile">
 				<ul class="menu">
-					<li><a href="#">О компании</a></li>
+					<li class="menu__haschild">
+						<a href="#">О компании</a>
+						<div class="menu-dropdown">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-11">
+										<div class="row">
+											<div class="col-lg-7">
+												<ul>
+													<li><a href="#">О нас</a></li>
+													<li><a href="#">Наши объекты</a></li>
+													<li><a href="#">Отзывы</a></li>
+													<li><a href="#">Вопрос-ответ</a></li>
+													<li><a href="#">Документация</a></li>
+												</ul>
+											</div>
+											<div class="col-lg-5">
+												<div class="image-menu">
+													<img src="img/img_menu.jpg" alt="alt">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
 					<li><a href="#">ЖК «Руднево»</a></li>
 					<li><a href="#">Подбор квартиры</a></li>
 					<li><a href="#">Аренда помещений</a></li>
@@ -66,10 +119,10 @@
 				</ul>
 				<div class="menu-mobile__bottom">
 					<ul class="social-list">
-					<li><a href="#"><img src="img/ht.svg" alt="alt"></a></li>
-					<li><a href="#"><img src="img/wp.svg" alt="alt"></a></li>
-					<li><a href="#"><img src="img/tg.svg" alt="alt"></a></li>
-				</ul>
+						<li><a href="#"><img src="img/ht.svg" alt="alt"></a></li>
+						<li><a href="#"><img src="img/wp.svg" alt="alt"></a></li>
+						<li><a href="#"><img src="img/tg.svg" alt="alt"></a></li>
+					</ul>
 					<p><strong>Офис продаж:</strong></p> 
 					<p>г. Севастополь, ул. Руднева, 30-Б</p> 
 					<br>
@@ -137,7 +190,7 @@
 					</div>
 					<div class="buttons-billbord">
 						<a href="#" class="btn-main btn-main_page">Подобрать квартиру</a>
-						<a href="#" class="btn-main">Записаться на экскурсию</a>
+						<a href="#modal-checkin" class="btn-main fancybox">Записаться на экскурсию</a>
 					</div>
 				</div>
 			</section> 
@@ -763,6 +816,41 @@
 		
 	</div>
 
+	<div id="modal-checkin" class="modal-block">
+		<div class="modal-wrap">
+			<div class="title-page">Заполните форму</div>
+			<div class="descr-form">и наш специалист свяжется с вами в течение 15 минут</div>
+			<form>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="item-form">
+							<input type="text" placeholder="Имя" required="required">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="item-form">
+							<input type="email" placeholder="E-mail" required="required">
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="item-form">
+							<input type="text" placeholder="Желаемое время и дата" required="required">
+						</div>
+					</div>
+				</div>
+				<div class="bottom-form">
+					<button class="btn-main">записаться на экскурсию</button>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" required="required" checked="checked" />
+							<span>Согласие на обработку персональных данных</span>
+						</label>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -779,7 +867,7 @@
 <script src="libs/fullPage.js-master/vendors/scrolloverflow.min.js"></script>
 <script src="libs/fullPage.js-master/jquery.fullPage.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.1"></script>
+<script src="js/common.js?ver=1.2"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
