@@ -1420,3 +1420,7 @@ border: 1px solid #AFAFAF;
 .modal-wrap .btn-main {
 	padding: 0 29px;
 }
+.fancybox-overlay {
+	background-image: none;
+	background: rgba(2, 39, 64, 0.6);
+}
