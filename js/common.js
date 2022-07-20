@@ -45,8 +45,22 @@ $('.tabs li a').click(function(event) {
 		}
 	}
 
+
+$(".btn-nav").click(function() {
+				$(this).toggleClass("active");
+				$(".nav-site li:not(.active)").slideToggle(200);
+			});
+
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
+
+
+	  $(".item-question__head").click(function() {
+  $(this).parent().toggleClass("active");
+  $(this).siblings().slideToggle(200);
+  $(this).parent().siblings(".item-question").removeClass("active");
+  $(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
+});
 
 
 	//кнопка sandwich
@@ -58,6 +72,12 @@ $('.tabs li a').click(function(event) {
 			$(".menu-mobile").slideUp(200);
 		}
 		
+	});
+
+	$(".menu-mobile .menu__haschild > a").click(function(e) {
+		e.preventDefault();
+		$(this).parent().toggleClass("active");
+		$(this).siblings(".menu-dropdown").slideToggle(200);
 	});
 
 	//слайдер
