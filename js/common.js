@@ -381,7 +381,8 @@ $(".btn-nav").click(function() {
 
 
 	 // стайлер для select
-	
+	 $('select').styler();
+
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
 	//<a class="fancybox"><img src="image.jpg" /></a>
