@@ -2067,7 +2067,6 @@ input[type=number]
 }
 .item-filter select {
 	opacity: 0;
-	visibility: hidden;
 }
 .item-filter .jqselect {
 	width: 100%;
